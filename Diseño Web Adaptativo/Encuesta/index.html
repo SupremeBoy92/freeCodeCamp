@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+</head>
+<body>
+    <h1 id="title">Encuesta freeCodeCamp Tutorial</h1>
+    <p id="description">Gracias por tomarte tu tiempo en ayudarnos a mejorar la plataforma</p>
+    <form id="survey-form" required>
+        <label id="name-label">Nombre <input type="text" id="name" placeholder="Ingresa tu Nombre" required></label>
+        <label id="email-label">Correo Electronico <input type="email" id="email" placeholder="anonimo@ejemplo.com" required></label>
+        <label id="number-label">Edad(opcional) <input type="number" id="number" placeholder="Edad" min="1" max="99"></label>
+        <label for="">Cual de estas opciones te describe mejor?</label>
+        <select name="dropdown" id="dropdown">
+            <option value="0">Estudiante</option>
+            <option value="1">Junior</option>
+            <option value="2">Senior</option>
+        </select>
+        <label for="">Recomendarias freeCodeCamp a un amigo?</label>
+        <input type="radio" name="recommend" id="recommend" value="si"> Si
+        <input type="radio" name="recommend" id="recommend" value="no"> No
+        <label for="">En que crees que tenemos que mejorar?</label>
+        <input type="checkbox" name="" id="improve" value="1"> Front-end Projects
+        <input type="checkbox" name="" id="improve" value="2"> Back-end Projects
+        <label for="">Sugerencias y Comentarios</label>
+        <textarea name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Añade aqui tu comentario o sugerencia"></textarea>
+        <button type="submit" id="submit">Enviar</button>
+    </form>
+</body>
+</html>
